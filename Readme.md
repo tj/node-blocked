@@ -11,8 +11,8 @@ $ npm install blocked
 
 ## Example
 
-  The `blocked()` function reports every value over 10ms, do whatever
-  you want with that value, graph it, log it, alert, etc.
+  The `blocked(fn[, n])` function reports every value over `n` ms to `fn`, do whatever
+  you want with that value, graph it, log it, alert, etc. `n` defaults to 10ms.
 
 ```js
 var blocked = require('blocked');
