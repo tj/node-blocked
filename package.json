@@ -1,0 +1,13 @@
+{
+  "name": "blocked",
+  "version": "0.0.1",
+  "repository": "visionmedia/node-blocked",
+  "description": "check if the event loop is blocked",
+  "keywords": ["block", "event", "loop", "performance"],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "license": "MIT"
+}
