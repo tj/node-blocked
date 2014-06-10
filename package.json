@@ -1,6 +1,6 @@
 {
   "name": "blocked",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "repository": "visionmedia/node-blocked",
   "description": "check if the event loop is blocked",
   "keywords": ["block", "event", "loop", "performance"],
