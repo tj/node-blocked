@@ -8,7 +8,7 @@ module.exports = function(fn) {
     var nanosec = delta[0] * 1e9 + delta[1];
     var ms = nanosec / 1e6;
     var n = ms - interval;
-    if (n > 10) fn(n)
+    if (n > 10) fn(Math.round(n))
     start = process.hrtime();
   }, interval);
 };
