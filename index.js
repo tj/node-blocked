@@ -10,5 +10,6 @@ module.exports = function(fn) {
     var n = ms - interval;
     if (n > 10) fn(Math.round(n))
     start = process.hrtime();
-  }, interval);
+  }, interval).unref();
 };
+

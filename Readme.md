@@ -14,6 +14,8 @@ $ npm install blocked
   The `blocked()` function reports every value over 10ms, do whatever
   you want with that value, graph it, log it, alert, etc.
 
+  The process won't be kept open through this!
+
 ```js
 var blocked = require('blocked');
 
