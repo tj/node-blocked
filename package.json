@@ -9,5 +9,8 @@
     "mocha": "*",
     "should": "*"
   },
+  "engines": {
+    "node": ">= 0.9.1"
+  },
   "license": "MIT"
 }
