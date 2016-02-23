@@ -9,28 +9,12 @@
 $ npm install blocked
 ```
 
-## Example
+## Description
 
-  The `blocked()` function reports every value over 10ms, do whatever
+  The `blocked()` function reports every value over the configured threshold (defaulted to 10ms).  You can then do whatever
   you want with that value, graph it, log it, alert, etc.
 
-  The process won't be kept open through this!
-
-```js
-var blocked = require('blocked');
-
-setInterval(function(){
-  Array(10000000).join('a')
-}, 500);
-
-setInterval(function(){
-  Array(100000000).join('a')
-}, 3000);
-
-blocked(function(ms){
-  console.log('BLOCKED FOR %sms', ms | 0);
-});
-```
+  The process won't be kept open through this.
 
 ## Params and return value
 
@@ -53,11 +37,11 @@ Returns: A reference to the timer. Useful for clearing the timer.
 ```
 var timer = blocked(function(ms) {
                 console.log("Blocked");
-            }, {threshold:1});
+            });
 clearInterval(timer);
 ```
 
 
 # License
 
-  MIT
+MIT
