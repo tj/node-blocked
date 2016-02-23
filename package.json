@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha",
-    "coverage": "./node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- 'test.js'"
+    "coverage": "./node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha"
   },
   "devDependencies": {
     "mocha": "*",

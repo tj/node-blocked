@@ -1,6 +1,6 @@
 'use strict';
 
-var blocked = require('./index');
+var blocked = require('./../index');
 
 describe('Blocked', function () {
 
