@@ -2,6 +2,8 @@
 # blocked
 
   Check if a node event loop is blocked.
+  
+  If You're running Node.js 8+ you can get a stacktrace pointing to the blocking function using very similar [blocked-at](https://github.com/naugtur/blocked-at) package.
 
 ## Installation
 
