@@ -20,7 +20,7 @@ $ npm install blocked
 
 ## Params and return value
 
-```
+```js
 var timer = blocked(fn, options);
 ```
 
@@ -28,7 +28,7 @@ var timer = blocked(fn, options);
 * options: _Optional._ Options object to configure the behaviour. For now, only the `threshold` option is supported. It determines the amount of ms used to determine if the function callback should be executed; useful to speed up tests 
 
 
-```
+```js
 blocked(function(ms) {
     console.log("Blocked");
 }, {threshold:1});
@@ -36,7 +36,7 @@ blocked(function(ms) {
   
 Returns: A reference to the timer. Useful for clearing the timer. 
 
-```
+```js
 var timer = blocked(function(ms) {
                 console.log("Blocked");
             });
