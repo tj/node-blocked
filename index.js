@@ -2,7 +2,7 @@
 module.exports = function (fn, options) {
     var opts = options || {};
     var start = process.hrtime();
-    var interval = 100;
+    var interval = opts.interval || 100;
     var threshold = opts.threshold || 10;
 
     return setInterval(function () {
