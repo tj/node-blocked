@@ -1,3 +1,7 @@
+1.3.0 / 2019-10-25
+==================
+* Add interval to options
+
 1.2.0 / 2016-02-12
 ==================
 * Return a reference to the timer
